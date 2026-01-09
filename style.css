@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #334e68;
+}
+
+#bgVideo {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+  filter: brightness(0.35);
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.08);
+}
+
+.logo {
+  color: #7fbce9;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.menu {
+  color: #f2c94c;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero-profile {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: white;
+}
+
+.hero h1 {
+  color: #102a43;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  padding: 60px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.admin-label {
+  background: #8b1e1e;
+  color: white;
+  text-align: center;
+  padding: 16px;
+}
+
+.cta {
+  text-align: center;
+  padding: 60px;
+}
+
+.cta-btn {
+  background: #f2c94c;
+  border: none;
+  padding: 14px 42px;
+  border-radius: 30px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  opacity: 0.6;
+}
